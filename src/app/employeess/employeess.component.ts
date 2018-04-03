@@ -8,7 +8,7 @@ import{EmployeeService} from './shared/employee.service';
 })
 export class EmployeessComponent implements OnInit {
 
-  constructor(private employeesrevice:EmployeeService) { }
+  constructor(public employeesrevice:EmployeeService) { }
 
   ngOnInit() {
   }

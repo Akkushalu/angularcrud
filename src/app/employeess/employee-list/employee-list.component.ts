@@ -10,7 +10,7 @@ import { ToastrService } from 'ngx-toastr';
 export class EmployeeListComponent implements OnInit {
 
   employeeList: Employee[];
-  constructor(private employeeService: EmployeeService, private tostr: ToastrService) { }
+  constructor(public employeeService: EmployeeService, public tostr: ToastrService) { }
  
   ngOnInit() {
     var x = this.employeeService.getData();
